@@ -1,6 +1,4 @@
-/* =========================================
-   1. VARIABLES & THEME SETUP
-   ========================================= */
+
 :root {
     /* Fonts */
     --font-heading: 'Inter', sans-serif;
@@ -43,18 +41,18 @@ body {
 
 .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
 
-/* =========================================
-   2. TYPOGRAPHY
-   ========================================= */
+
+/* 2. TYPOGRAPHY */
+
 h1 { font-family: var(--font-heading); font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem; letter-spacing: -0.02em; }
 h2 { font-family: var(--font-heading); font-size: 1.1rem; font-weight: 700; margin-bottom: 1rem; letter-spacing: -0.01em; }
 h3 { font-family: var(--font-heading); font-size: 0.95rem; font-weight: 600; margin-bottom: 0.25rem; }
 p { font-size: 0.85rem; line-height: 1.6; color: var(--text-secondary); }
 .subtitle { font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-secondary); }
 
-/* =========================================
-   3. BUTTONS (SHARED STYLES)
-   ========================================= */
+
+   /* 3. BUTTONS (SHARED STYLES) */
+
 /* Applies to Social Icons, Navigation, Skills, Show More */
 .icon-btn, .cv-btn, .nav-item, .skill-btn, .pill, .btn-outline {
     background-color: var(--btn-bg); /* Changes in dark mode */
@@ -80,9 +78,9 @@ p { font-size: 0.85rem; line-height: 1.6; color: var(--text-secondary); }
     border-color: var(--text-primary);
 }
 
-/* =========================================
-   4. SPECIFIC LAYOUTS
-   ========================================= */
+
+   /* 4. SPECIFIC LAYOUTS */
+
 /* Header */
 .profile-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 40px; }
 .profile-info { flex: 1; padding-right: 20px; }
@@ -119,11 +117,12 @@ p { font-size: 0.85rem; line-height: 1.6; color: var(--text-secondary); }
     .profile-header { flex-direction: column-reverse; gap: 20px; }
     .main-nav { flex-wrap: nowrap; overflow-x: auto; justify-content: flex-start; padding-bottom: 15px; }
     .main-nav::-webkit-scrollbar { display: none; }
+
 }
 
-/* =========================================
-   5. PROJECTS GRID
-   ========================================= */
+
+   /* 5. PROJECTS GRID */
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -194,4 +193,5 @@ body.dark-mode .project-card:hover {
 
 body.dark-mode .tag {
     border-color: var(--border-color);
+
 }
