@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prabhakar Vishwakarma - Portfolio</title>
+    
+
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <main class="container">
+        <header class="profile-header" id="home">
+            <div class="profile-info">
+                <h1>Prabhakar Vishwakarma</h1>
+                <p class="subtitle">Student at SRMU, currently pursuing BCA (Artificial Intelligence & Data Science)</p>
+                
+                <div class="social-links">
+                    <a href="mailto:prabhakarvishwakarma451@gmail.com" class="icon-btn"><i class="fa-regular fa-envelope"></i></a>
+                    <a href="https://github.com/prabhakarvishwakarma" target="_blank" rel="noopener noreferrer" class="icon-btn"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/prabhakarvishwakarma/" target="_blank" rel="noopener noreferrer" class="icon-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="Prabhakar's Resume.pdf" target="_blank" rel="noopener noreferrer" class="cv-btn"><i class="fa-regular fa-file"></i> Resume</a>
+                    
+                    <button id="theme-toggle" class="icon-btn" aria-label="Toggle Dark Mode">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="profile-image">
+                <img src="pic.jpeg" alt="Prabhakar Vishwakarma">
+            </div>
+        </header>
+
+        <section class="about-section" id="about">
+            <h2>About</h2>
+            <div class="content-wrapper">
+                <p>Building strong technical foundations with a focus on real-world problem solving. Currently working with Python, leveraging libraries such as Pandas and Matplotlib for data analysis and visualization, along with solid experience in C++ programming and SQL. I enjoy transforming raw data into meaningful insights.</p>
+                
+                <div id="more-text" class="hidden-content">
+                    <h3>My Journey in AI</h3>
+                    <p>My fascination with AI began during my early undergraduate years when I first explored the intersection of computer vision and natural language processing.</p>
+                </div>
+            </div>
+            <button id="toggle-about" class="btn-outline"><i class="fa-solid fa-align-left"></i> Show More</button>
+        </section>
+
+        <nav class="main-nav">
+            <a href="#home" class="nav-item active"><i class="fa-solid fa-house"></i> Home</a>
+            <a href="#about" class="nav-item"><i class="fa-regular fa-user"></i> About</a>
+            <a href="#projects" class="nav-item"><i class="fa-solid fa-folder-open"></i> Projects</a>
+            <a href="#education" class="nav-item"><i class="fa-solid fa-graduation-cap"></i> Education</a>
+        </nav>
+
+        <section class="section" id="skills">
+            <h2>Skills</h2>
+            
+            <div class="skills-filter">
+                <button class="skill-btn active" data-filter="all"><i class="fa-solid fa-layer-group"></i> All Skills</button>
+                <button class="skill-btn" data-filter="ai-ml"><i class="fa-solid fa-brain"></i> AI/ML/DL</button>
+                <button class="skill-btn" data-filter="web"><i class="fa-solid fa-globe"></i> Web</button>
+                <button class="skill-btn" data-filter="python"><i class="fa-brands fa-python"></i> Python Libs</button>
+            </div>
+            
+            <div class="skills-cloud">
+                <span class="pill" data-category="python"><i class="fa-brands fa-python"></i> Python</span>
+                <span class="pill" data-category="python"><i class="fa-solid fa-table"></i> Pandas</span>
+                <span class="pill" data-category="python"><i class="fa-solid fa-chart-line"></i> Matplotlib</span>
+                <span class="pill" data-category="ai-ml"><i class="fa-brands fa-aws"></i> AWS SageMaker</span>
+                
+                <span class="pill" data-category="web"><i class="fa-brands fa-html5"></i> HTML</span>
+                <span class="pill" data-category="web"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+                <span class="pill" data-category="web"><i class="fa-brands fa-js"></i> JavaScript</span>
+                <span class="pill" data-category="web"><i class="fa-brands fa-react"></i> React.js</span>
+
+                <span class="pill" data-category="other"><i class="fa-solid fa-code"></i> C++</span>
+                <span class="pill" data-category="other"><i class="fa-solid fa-database"></i> SQL</span>
+                <span class="pill" data-category="other"><i class="fa-brands fa-docker"></i> Docker</span>
+            </div>
+        </section>
+        
+        <section class="section" id="projects">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                
+                <div class="project-card">
+                    <h3 class="project-title">Product Price Analysis and Visualization<span class="status-dot"></span></h3>
+                    <p class="project-desc">The Product Price Analysis and Visualization project is a Python-based data analysis tool that enables users to upload product datasets (in CSV or Excel format), automatically clean and analyze the data, and generate multiple types of visualizations.</p>
+                    <div class="project-tags">
+                        <div class="project-tags">
+                            <a href="https://github.com/PrabhakarVishwakarma/Product-Price-Analysis-and-Visualization" class="tag" target="_blank" rel="noopener noreferrer">Open to See</a>
+                        </div>
+                        <!-- <span class="tag">NLTK</span>  -->
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3 class="project-title">Amazon clone <span class="status-dot"></span></h3>
+                    <p class="project-desc">Amzon clone first project using HTML and CSS</p>
+                    <div class="project-tags">
+                            <a href="https://github.com/PrabhakarVishwakarma/Amazon-clone" class="tag" target="_blank" rel="noopener noreferrer">Open to See</a>
+                    </div>
+                    
+                </div>
+
+                
+                <div class="project-card">
+                    <h3 class="project-title">Working..</h3>
+                    <p class="project-desc">Next project under construction..</p>
+                    <div class="project-tags">
+                            <a href="#" class="tag" target="_blank" rel="noopener noreferrer">Open to See</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="section education-section" id="education">
+            <h2>Education</h2>
+            <div class="edu-item">
+                <div class="edu-details">
+                   <h3>Shri Ramswaroop Memorial University</h3>
+                   <p>Bachelor's Degree in Computer Application</p>
+                </div>
+                <span class="date">2024 - 2027</span>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
